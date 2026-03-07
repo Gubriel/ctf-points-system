@@ -18,13 +18,12 @@
         <div class="min-h-screen bg-black">
             @include('layouts.navigation')
 
-            <!-- Page Heading -->
-            @isset($header)
-                <header class="bg-gray-900 border-green-600 border-b-4 shadow-lg shadow-green-600">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
+            @isset($logo)
+                <div class="flex justify-center">
+                    <img src="{{ asset('images/logo.png') }}"
+                        alt="Logo"
+                        class="h-10">
+                </div>
             @endisset
 
             <!-- Page Content -->
