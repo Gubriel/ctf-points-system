@@ -172,23 +172,21 @@
     }
 
     .challenges-frame::before{
-    transform:translate(2px,-2px);
-    animation:frameGlitch 2s infinite;
+        transform:translate(2px,-2px);
+        animation:frameGlitch 2s infinite;
     }
 
     .challenges-frame::after{
-    transform:translate(-2px,2px);
-    animation:frameGlitch 1.5s infinite;
+        transform:translate(-2px,2px);
+        animation:frameGlitch 1.5s infinite;
     }
 
     @keyframes frameGlitch{
-
-    0%{clip-path: inset(0 0 90% 0);}
-    25%{clip-path: inset(20% 0 60% 0);}
-    50%{clip-path: inset(40% 0 40% 0);}
-    75%{clip-path: inset(60% 0 20% 0);}
-    100%{clip-path: inset(0 0 90% 0);}
-
+        0%{clip-path: inset(0 0 90% 0);}
+        25%{clip-path: inset(20% 0 60% 0);}
+        50%{clip-path: inset(40% 0 40% 0);}
+        75%{clip-path: inset(60% 0 20% 0);}
+        100%{clip-path: inset(0 0 90% 0);}
     }
 
     /* =========================
@@ -196,72 +194,50 @@
     ========================= */
 
     .challenges{
-
-    width:900px;
-
-    padding:20px;
-
-    background:rgba(0,20,0,0.2);
-
-    backdrop-filter:blur(4px);
-
-    animation:panelShake 4s infinite;
-
+        width:900px;
+        padding:20px;
+        background:rgba(0,20,0,0.2);
+        backdrop-filter:blur(4px);
+        animation:panelShake 4s infinite;
     }
 
     @keyframes panelShake{
-
-    0%{transform:translate(0,0)}
-    25%{transform:translate(1px,-1px)}
-    50%{transform:translate(-1px,1px)}
-    75%{transform:translate(1px,1px)}
-    100%{transform:translate(0,0)}
-
+        0%{transform:translate(0,0)}
+        25%{transform:translate(1px,-1px)}
+        50%{transform:translate(-1px,1px)}
+        75%{transform:translate(1px,1px)}
+        100%{transform:translate(0,0)}
     }
 
     /* linha */
 
     .challenge{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    padding:12px;
-
-    border-bottom:1px solid rgba(0,255,65,0.15);
-
-    transition:0.2s;
+        display:flex;
+        justify-content:space-between;
+        padding:12px;
+        border-bottom:1px solid rgba(0,255,65,0.15);
+        transition:0.2s;
     }
 
     .challenge:hover{
-
-    background:rgba(0,255,65,0.08);
-    transform:translateX(4px);
-
+        background:rgba(0,255,65,0.08);
+        transform:translateX(4px);
     }
-
     /* colunas */
-
     .name{flex:2}
     .category{flex:1}
     .points{width:100px;text-align:right}
     .difficulty{width:120px;text-align:center}
     .status{width:120px;text-align:right}
-
     /* status */
-
     .solved{
         color:#00ff41;
         text-shadow:0 0 8px #00ff41;
     }
-
     .locked{
         color:#006b3f;
     }
-
     /* footer */
-
     .footer{
         position:absolute;
         bottom:15px;
